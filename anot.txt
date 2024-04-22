@@ -1,0 +1,3 @@
+* Ao usar styled components lembre de
+  * ter a extensão
+  * npm i styled-components
