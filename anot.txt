@@ -4,3 +4,4 @@
 * npm i react-icons
 * npm i react-router-dom@5.2.0
 * npm i history
+* npm i prop-types => provavelmente para validação de components (tipagem)
