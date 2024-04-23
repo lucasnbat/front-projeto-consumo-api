@@ -27,5 +27,6 @@ module.exports = {
     'import/prefer-default-export': 0,
     'jsx-a11y/anchor-is-valid': 0,
     'jsx-a11y/control-has-associated-label': 0,
+    'import/no-extraneous-dependencies': 0,
   },
 };
