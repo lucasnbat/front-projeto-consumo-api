@@ -7,7 +7,7 @@ import axios from '../../services/axios';
 export default function Login() {
   React.useEffect(() => {
     async function getData() {
-      const response = await axios.get('/alunos');
+      const response = await axios.get('http://192.168.100.200/alunos');
       console.log(response);
     }
 
