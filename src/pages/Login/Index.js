@@ -6,6 +6,8 @@ import { useDispatch } from 'react-redux';
 import { Title, Paragraph } from './styled';
 import { Container } from '../../styles/GlobalStyles';
 
+import * as exampleActions from '../../store/modules/example/actions';
+
 import axios from '../../services/axios';
 
 export default function Login() {
@@ -13,11 +15,8 @@ export default function Login() {
 
   function handleClick(e) {
     e.preventDefault();
-    console.log('Clicou');
 
-    dispatch({
-      type: 'BOTAO_CLICADO',
-    });
+    dispatch(exampleActions.clicaBotao());
   }
 
   React.useEffect(() => {
