@@ -1,21 +1,3 @@
-import * as types from '../types';
-
-/**
- * Isso serve para modularizar, basicamente
- * eu tenho um dispactch com uma variavel que
- * contem as ações que eu quero disparar e
- * invoco a clicaBotao() que vai disparar
- * esse type. O type, por sua vez, aciona
- * o reducer que vai fazer a alteração no
- * estado.
- */
-
-export function clicaBotao() {
-  return {
-    type: types.BOTAO_CLICADO,
-  };
-}
-
 /**
  * A lógica antes envolvia:
  * 1. arquivo index do Store contendo o reducer com o switch
