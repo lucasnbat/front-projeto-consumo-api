@@ -1,3 +1,4 @@
+import * as types from '../types';
 /**
  * A lógica antes envolvia:
  * 1. arquivo index do Store contendo o reducer com o switch
@@ -21,10 +22,21 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case 'BOTAO_CLICADO': {
+    case types.BOTAO_CLICADO_SUCESS: {
+      console.log('Sucesso');
       const newState = { ...state }; // copia o estado atual
       newState.botaoClicado = !newState.botaoClicado; // modifica o novo estado para o inverso
       return newState;
+    }
+
+    case types.BOTAO_CLICADO_FAILURE: {
+      console.log('Deu erro');
+      return state;
+    }
+
+    case types.BOTAO_CLICADO_REQUEST: {
+      console.log('Fazendo requisição para a API');
+      return state;
     }
 
     default:
